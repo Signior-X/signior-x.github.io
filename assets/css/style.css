@@ -1175,8 +1175,14 @@ section {
   font-size: 13px;
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1296px) {
   #main {
     margin-left: 0;
+  }
+}
+
+@media (min-width: 993px) {
+  .d-xl-none {
+      display: none!important;
   }
 }
