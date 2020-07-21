@@ -1,14 +1,3 @@
-/**
-* Customised by Priyam
-* Template Name: MyResume - v2.1.0
-* Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
 html {
   scroll-behavior: smooth;
 }
@@ -34,7 +23,7 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
-.back-to-top {
+/* .back-to-top {
   position: fixed;
   display: none;
   width: 40px;
@@ -59,12 +48,12 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   background: #0678e3;
   transition: background 0.2s ease-in-out;
-}
+} */
 
 /*--------------------------------------------------------------
 # Preloader CSS It show animation by itself
 --------------------------------------------------------------*/
-#preloader {
+/* #preloader {
   position: fixed;
   top: 0;
   left: 0;
@@ -106,7 +95,7 @@ h1, h2, h3, h4, h5, h6 {
   100% {
     transform: rotate(360deg);
   }
-}
+} */
 
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
