@@ -573,6 +573,7 @@
         var hH = factsSec.offsetHeight;
         var wH = window.outerHeight;
         var wS = window.scrollY;
+        if(window.matchMedia("(max-width:767px)").matches){wH = wH+600;}
 
         if (wS > (hT+hH-wH)){
           factsSec.classList.add('increased');
