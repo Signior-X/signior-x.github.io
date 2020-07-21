@@ -277,6 +277,40 @@
       </div>
     </section>
 
+    <!-- Add all scripts here -->
+    <!-- Adding here to load them before portfolio images -->
+    <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+
+      <!-- All the JS setup of this page -->
+    <script src="assets/js/main.min.js"></script>
+    <script type="module">
+      import {CountUp} from './assets/vendor/countup/countUp.min.js';
+
+      window.addEventListener('scroll', function() {
+        var factsSec = document.getElementById('facts');
+        if(!factsSec.classList.contains('increased')){
+          var hT = factsSec.offsetTop;
+          var hH = factsSec.offsetHeight;
+          var wH = window.outerHeight;
+          var wS = window.scrollY;
+          if(window.matchMedia("(max-width:767px)").matches){wH = wH+600;}
+
+          if (wS > (hT+hH-wH)){
+            factsSec.classList.add('increased');
+            var countUpList = document.getElementsByClassName('count-up');
+            for (var i=0; i<countUpList.length; i++){
+              var countUp = new CountUp(countUpList[i], countUpList[i].getAttribute('value'));
+              countUp.start();
+            }
+          }
+        }
+      });
+
+    </script>
+
     <section id="portfolio" class="portfolio section-bg">
       <div class="container" data-aos="fade-up">
         <div class="section-title">
@@ -507,39 +541,6 @@
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" data-icon="bx:bx-up-arrow-alt" data-width="1em" data-height="1em" data-inline="false" class="iconify" style="transform: rotate(360deg);"><path d="M11 8.414V18h2V8.414l4.293 4.293l1.414-1.414L12 4.586l-6.707 6.707l1.414 1.414z" fill="currentColor"></path></svg>
   </i></a>
   <!-- <div id="preloader"></div> -->
-
-  <!-- Add all scripts here -->
-  <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-  <!-- All the JS setup of this page -->
-  <script src="assets/js/main.min.js"></script>
-  <script type="module">
-    import {CountUp} from './assets/vendor/countup/countUp.min.js';
-
-    window.addEventListener('scroll', function() {
-      var factsSec = document.getElementById('facts');
-      if(!factsSec.classList.contains('increased')){
-        var hT = factsSec.offsetTop;
-        var hH = factsSec.offsetHeight;
-        var wH = window.outerHeight;
-        var wS = window.scrollY;
-        if(window.matchMedia("(max-width:767px)").matches){wH = wH+600;}
-
-        if (wS > (hT+hH-wH)){
-          factsSec.classList.add('increased');
-          var countUpList = document.getElementsByClassName('count-up');
-          for (var i=0; i<countUpList.length; i++){
-            var countUp = new CountUp(countUpList[i], countUpList[i].getAttribute('value'));
-            countUp.start();
-          }
-        }
-      }
-    });
-
-  </script>
 
 </body>
 
