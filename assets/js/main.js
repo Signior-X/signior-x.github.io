@@ -85,7 +85,7 @@ window.addEventListener('scroll', function() {
 
 window.addEventListener('load', (event) => {
   console.log('page is fully loaded');
-  document.getElementById('preloader').style.display = "none";
+  // document.getElementById('preloader').style.display = "none";
   aos_init();
 });
 
