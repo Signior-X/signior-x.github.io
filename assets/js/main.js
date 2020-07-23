@@ -9,7 +9,7 @@ function aos_init() {
 }
 
 // For inital typing animation using Typed.js
-var typed_strings = ["Designer", "Developer", "Freelancer", "Philosopher"];
+var typed_strings = ["Developer", "Designer", "Philosopher", "Freelancer"];
 new Typed('.typed', {
   strings: typed_strings,
   loop: true,
